@@ -1,1 +1,15 @@
 @import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+* {
+  font-family: 'DM Sans', sans-serif;
+}
+
+body {
+  background-color: #ffffff;
+
+  &.dark {
+    background-color: #12131a;
+  }
+}
