@@ -4,7 +4,7 @@
 
 * {
   font-family: 'DM Sans', sans-serif;
-  transition-property: background-color, color;
+  transition-property: background-color, color, border-color;
   transition-duration: 1s;
   transition-timing-function: linear;
 }
