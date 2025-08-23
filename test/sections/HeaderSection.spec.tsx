@@ -10,6 +10,7 @@ describe('Given the Header Component', () => {
       name: /dark theme/i,
     });
     expect(buttonTheme).toBeInTheDocument();
+    expect(buttonTheme).toHaveAttribute('aria-label', 'Switch to dark theme');
     await user.click(buttonTheme);
     const darkButtonTheme = screen.queryByRole('button', {
       name: /dark theme/i,
@@ -19,5 +20,9 @@ describe('Given the Header Component', () => {
       name: /light theme/i,
     });
     expect(lightButtonTheme).toBeInTheDocument();
+    expect(lightButtonTheme).toHaveAttribute(
+      'aria-label',
+      'Switch to light theme'
+    );
   });
 });
