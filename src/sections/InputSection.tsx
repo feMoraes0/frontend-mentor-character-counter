@@ -4,7 +4,7 @@ type Event = {
   };
 };
 
-const InputComponent = () => {
+const InputSection = () => {
   function handleTextInput(event: Event) {
     console.log(event.target.value);
   }
@@ -53,4 +53,4 @@ const InputComponent = () => {
   );
 };
 
-export default InputComponent;
+export default InputSection;

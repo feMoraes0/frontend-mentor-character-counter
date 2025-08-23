@@ -1,10 +1,10 @@
-import HeaderComponent from '../components/HeaderComponent';
-import InputComponent from '../components/InputComponent';
+import HeaderSection from '../sections/HeaderSection';
+import InputSection from '../sections/InputSection';
 
 function App() {
   return (
     <>
-      <HeaderComponent />
+      <HeaderSection />
       <h1
         className="
           text-[40px] leading-[100%] tracking-[-1px] text-[#12131A] text-center font-bold mt-10
@@ -15,7 +15,7 @@ function App() {
       >
         Analyze your text in real-time.
       </h1>
-      <InputComponent />
+      <InputSection />
     </>
   );
 }

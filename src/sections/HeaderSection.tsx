@@ -3,7 +3,7 @@ import DarkModeIcon from '../assets/icons/dark-mode.svg';
 import LightModeIcon from '../assets/icons/light-mode.svg';
 import useTheme from '../hooks/use-theme';
 
-const HeaderComponent = () => {
+const HeaderSection = () => {
   const [theme, toggleTheme] = useTheme();
   const modeIcon = theme === 'dark' ? LightModeIcon : DarkModeIcon;
   const nextTheme = theme === 'dark' ? 'light' : 'dark';
@@ -29,4 +29,4 @@ const HeaderComponent = () => {
   );
 };
 
-export default HeaderComponent;
+export default HeaderSection;
