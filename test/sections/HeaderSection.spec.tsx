@@ -1,11 +1,11 @@
 import { render, screen } from '@testing-library/react';
 import { userEvent } from '@testing-library/user-event';
-import HeaderComponent from '../../src/components/HeaderComponent';
+import HeaderSection from '../../src/sections/HeaderSection';
 
 describe('Given the Header Component', () => {
   it('When theme button is clicked, then should validate dark to light theme switch', async () => {
     const user = userEvent.setup();
-    render(<HeaderComponent />);
+    render(<HeaderSection />);
     const buttonTheme = screen.getByRole('button', {
       name: /dark theme/i,
     });
